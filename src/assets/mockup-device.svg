@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1010 626">
+  <defs>
+    <linearGradient id="f6d885a6-48ee-4b33-95a5-b1b042416f50" x1="299.99" y1="-28.27" x2="777.01" y2="483.27" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#666"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="f079aa9d-2185-41f7-8a7c-bf70058f18d6" x1="1392.1" y1="680.36" x2="1392.1" y2="270.15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dedede"/>
+      <stop offset="1" stop-color="#dadada"/>
+    </linearGradient>
+    <linearGradient id="aa6d8ac5-51f7-40df-a744-1590ab0fd7e7" x1="1908.58" y1="404.27" x2="849.07" y2="404.27" gradientTransform="matrix(1, 0, 0, -1, 0, 1082)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bbb"/>
+      <stop offset="0.2" stop-color="#f0f0f0"/>
+      <stop offset="0.5" stop-color="#d2d2d3"/>
+      <stop offset="0.75" stop-color="#f0f0f0"/>
+      <stop offset="1" stop-color="#c3c3c3"/>
+    </linearGradient>
+    <linearGradient id="f8909398-01ae-4b07-a1b1-3dc0260d676e" x1="1327.3" y1="405.6" x2="1456.91" y2="405.6" gradientTransform="matrix(1, 0, 0, -1, 0, 1082)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afafaf"/>
+      <stop offset="0.03" stop-color="#efefef"/>
+      <stop offset="0.97" stop-color="#efefef"/>
+      <stop offset="1" stop-color="#afafaf"/>
+    </linearGradient>
+    <linearGradient id="a43557e0-e236-4414-82d6-bfcb705308a4" x1="95.91" y1="177.83" x2="341.39" y2="450.47" gradientUnits="userSpaceOnUse">
+      <stop offset="0.2" stop-color="#666"/>
+      <stop offset="0.8" stop-color="#333"/>
+    </linearGradient>
+  </defs>
+  <title>mockup device</title>
+  <g style="isolation: isolate">
+    <g id="b88350c4-67f8-498c-adb5-7489e03df2c4" data-name="Jancok">
+      
+      <g>
+        <g id="b2382ab5-0d6d-43e5-9d2c-65d699c029ec" data-name="Laptop">
+          <rect x="230" y="37" width="617" height="381" style="fill: url(#f6d885a6-48ee-4b33-95a5-b1b042416f50)"/>
+          <path d="M1704.22,270.15H1080q-10.2,0-10.2,10.18V670.16q0,10.19,10.2,10.2h624.23q10.18,0,10.19-10.2V280.33Q1714.41,270.15,1704.22,270.15Zm-15,381H1096.33V294.05H1689.2Z" transform="translate(-855 -244)" style="fill: url(#f079aa9d-2185-41f7-8a7c-bf70058f18d6)"/>
+          <path id="e2c5d774-d769-4ee5-8b23-a05e161fdc22" data-name="b4CCNQGOQW" d="M1790,681q-41.4,11.4-46,12.66a64.12,64.12,0,0,1-14.32,1.94h-675.1a64.38,64.38,0,0,1-14.34-1.94q-4.62-1.25-46-12.66Z" transform="translate(-855 -244)" style="fill: #ededed"/>
+          <path id="bc110b72-732c-4c7e-b1f0-e3c020038f54" data-name="b4h77SG8AS" d="M994.2,674.41H1790V681H994.2Z" transform="translate(-855 -244)" style="fill: url(#aa6d8ac5-51f7-40df-a744-1590ab0fd7e7)"/>
+          <path id="f7973b1b-cc41-4f16-a1fb-3073c42bd947" data-name="a6l3uPKqT" d="M1458.41,674.41c-.26,1.22-.41,1.9-.43,2a2.56,2.56,0,0,1-2.41,1.94H1328.63a2.56,2.56,0,0,1-2.4-1.94c0-.14-.18-.82-.44-2Z" transform="translate(-855 -244)" style="fill: url(#f8909398-01ae-4b07-a1b1-3dc0260d676e)"/>
+        </g>
+        <g id="bca8c162-8be8-40eb-956b-b995e60ad3ec" data-name="Hape">
+          <g id="b6a2ec23-f4fd-4347-bdde-4984bd90482d" data-name="Change HERE">
+            <rect x="114" y="116" width="164" height="346" style="fill: url(#a43557e0-e236-4414-82d6-bfcb705308a4)"/>
+            <text transform="translate(141 277.89)" style="font-size: 20.34857940673828px;fill: #f2f2f2;font-family: MyriadPro-Regular, Myriad Pro"><tspan style="letter-spacing: -0.013989574557511092em">L</tspan><tspan x="9.32" y="0">o</tspan><tspan x="20.49" y="0" style="letter-spacing: -0.009982269324055942em">r</tspan><tspan x="26.94" y="0">em ipsum</tspan></text>
+          </g>
+          <path d="M961.73,589.87q0-51.3,0-102.59c0-.66,0-1.17-.81-1.42s-.88-.92-.88-1.64c0-7.45,0-14.91,0-22.36,0-.34,0-.87.2-1,2.48-1.43,1.18-3.8,1.46-5.76.13-.93.25-1.9-1.05-2.33-.59-.2-.63-.95-.63-1.57q0-11.07,0-22.14c0-.63,0-1.37.63-1.58,1.27-.43,1.07-1.37,1.07-2.33,0-3.3,0-6.61,0-9.91,0-.51-.06-.82-.62-1a1.59,1.59,0,0,1-1.07-1.74q0-4.86,0-9.7c0-.59.08-1.29.63-1.47,1.28-.43,1.07-1.38,1.07-2.33,0-7.73-.22-15.48.1-23.2A25.07,25.07,0,0,1,987,352q36.91,0,73.81,0h52.41c15.12,0,26.12,11,26.14,26.09q0,28.37,0,56.73c0,.62,0,1.09.76,1.35s.94,1.05.94,1.83V475.2a1.79,1.79,0,0,1-1.24,2c-.76.23-.43.8-.43,1.21q0,30.11,0,60.21,0,75.39,0,150.78c0,12.89-7.93,23-20.18,25.66a25.18,25.18,0,0,1-5.55.54H987.48a25.24,25.24,0,0,1-25.74-25.73Q961.73,639.85,961.73,589.87Zm167.86-56V380.73c0-.94,0-1.89-.08-2.84-.47-7.54-6.81-14.35-14.34-15.14-5.6-.59-11.23-.14-16.85-.22-3.38,0-3.69.29-3.71,3.62,0,5.51-3.56,9-9,9h-68.74c-6.61,0-10.26-3.56-10.38-10.14,0-1.76-.88-2.54-2.63-2.53-4.81,0-9.63,0-14.44,0-10.86,0-17.92,7.07-17.92,18v307c0,10.26,7.24,17.51,17.51,17.51H1111.8c10.63,0,17.79-7.16,17.79-17.78Z" transform="translate(-855 -244)" style="fill: #e6e6e6"/>
+          <g>
+            <circle cx="215.65" cy="121.69" r="2.74" style="fill: #666"/>
+            <rect x="181.91" y="120.21" width="27.42" height="2.95" rx="1.48" style="fill: #666"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

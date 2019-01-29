@@ -1,0 +1,10 @@
+<svg id="a4ab7729-e3aa-4ee4-8e6b-e6f92bbd804e" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 5 303.53">
+  <defs>
+    <linearGradient id="e0998d07-528e-4f00-bb26-df2909847f70" x1="3" y1="303.53" x2="3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdfdfd"/>
+      <stop offset="1" stop-color="#fdfdfd" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <title>header</title>
+  <rect width="5" height="303.53" style="fill: url(#e0998d07-528e-4f00-bb26-df2909847f70)"/>
+</svg>

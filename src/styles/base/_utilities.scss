@@ -1,0 +1,51 @@
+.u-margin-top-sm {
+      margin-top: 1.5rem !important;
+
+      @include customRespond(1370) {
+            margin-top: 1rem !important;
+      }
+}
+
+.u-margin-top-md {
+      margin-top: 3rem !important;
+      
+      @include customRespond(1370) {
+            margin-top: 2rem !important;
+      }
+}
+
+.u-margin-top-bg {
+      margin-top: 6.5rem !important;
+
+      @include respond(tab-small) {
+            margin-top: 3rem !important;
+      }
+}
+
+.u-margin-bot-bg {
+      margin-bottom: 6.5rem !important;
+      
+      @include respond(mid-desktop) {
+            margin-bottom: 5rem !important;
+      }
+}
+
+.u-margin-bot-sm {
+      margin-bottom: 2.5rem !important;
+}
+
+.u-margin-top-xbg {
+      margin-top: 26rem !important;
+}
+
+.u-margin-bot-xbg {
+      margin-bottom: 26rem !important;
+
+      @include respond(mid-desktop) {
+            margin-bottom: 15rem !important;
+      }
+      @include respond(tab-small) {
+            margin-bottom: 7rem !important;
+            
+      }
+}
