@@ -9,12 +9,13 @@
 
 *:link,
 *:visited{
-      color: $color-rd;
+      color: $color-bk;
 }
 
 html {
       font-size: 62.5%;
       scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
 
       @include respond(tab-land) {
             //if lebar layar <= 1200px

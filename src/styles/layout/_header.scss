@@ -1,0 +1,123 @@
+.header{
+      height: auto;
+
+      &__jumbotron{
+            padding: 0 6%;
+            height: 50rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: url(../assets/hero.jpg) no-repeat right top;
+            background-color: $color-wh;
+            
+            & h1 {
+                  color: $color-bk2;
+                  width: 50%;
+                  
+                  & span {
+                        position: relative;
+
+                        &::after {
+                              content: "";
+                              display: block;
+                              position: absolute;
+                              bottom: 4px;
+                              right: 0;
+                              width: 100%;
+                              background-color: $color-rd;
+                              height: 13px;
+                              opacity: .5;
+                        }
+                  }
+            }
+
+            & p {
+                  font-size: 1.8rem;
+                  
+                  font-weight: 300;
+                  width: 43%;
+            }
+      }
+
+      &__container{
+            height: 53rem;
+            display: flex;
+            width: 95%;
+            margin: -16rem auto 0;
+
+      }
+
+      &__image{
+            width: 90rem;
+            height: 52rem;
+      }
+
+
+      &__form{
+            height: 43rem;
+            width: 45rem;
+            background-color: $color-bk3;
+            align-self: flex-end;
+            border-radius: 8px;
+            margin-left: -4rem;
+            box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.09);
+            padding: 3.5rem 4.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &__head{
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                  align-items: center;
+            }
+            
+            &__title{
+
+                  & h3{
+                        font-weight: 500;  
+                        font-size: 2.4rem;
+                        color: $color-wh2;
+                        line-height: 1;
+                  }
+                  & h4{
+                        color: $color-wh2;
+                        font-weight: 300;
+                        font-size: 1.4rem;
+                        
+                  }
+            }
+
+            &__playstore{
+                  width: 17rem;
+                  height: 6.4rem;
+            }
+
+
+            &__body{
+                  height: auto;
+                  margin-top: 2rem;
+            }
+      }
+
+
+      &__sponsor{
+            height: 8rem;
+            display: flex;
+            width: 85%;
+            margin: 10rem auto;
+            justify-content: space-around;
+
+            &-item{
+                  height: 8rem;
+                  width: 12%;
+                  & svg{
+                        width: 100%;
+                        height: 100%;
+                        opacity: .3;
+                  }
+            }
+      }
+      
+}
