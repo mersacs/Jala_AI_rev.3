@@ -32,7 +32,6 @@
 
             & p {
                   font-size: 1.8rem;
-                  
                   font-weight: 300;
                   width: 43%;
             }
@@ -41,6 +40,7 @@
       &__container{
             height: 53rem;
             display: flex;
+            justify-content: center;
             width: 95%;
             margin: -16rem auto 0;
 
