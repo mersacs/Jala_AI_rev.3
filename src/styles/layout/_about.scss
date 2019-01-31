@@ -1,0 +1,17 @@
+.about{
+      width: 88%;
+      margin: 0 auto;
+      &__container{
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-wrap: wrap;
+            & div {
+                  margin: 1rem 1rem;
+            }
+      }
+
+      & .paragraph {
+            width: 70%;
+      }
+}

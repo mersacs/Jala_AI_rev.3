@@ -1,0 +1,53 @@
+.card {
+      width: 22rem;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      box-shadow: 0 0 18px 0 rgba(0,0,0,.2);
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      transform: rotatey(0deg);
+      backface-visibility: hidden;
+      transition: 2s;
+
+      &:before{
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 100%;
+            top: -15%;
+            left: 0;
+            background-color: $color-grey3;
+            z-index: -1;
+            transform: skewy(15deg);
+            transition: .7s;
+      }
+
+      &:hover:before{
+            height: 140%;
+      }
+
+      &:after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: $color-wh2;
+            z-index: -2;
+      }
+      &__image{
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            flex-basis: 40%;
+      }
+
+      &__desc{
+            padding-top: 2rem;
+            text-align: center;
+            width: 100% !important;
+      }
+}
