@@ -24,6 +24,11 @@
             &::placeholder{
                   color: $color-grey;
             }
+
+            &--grey{
+                  border: 1px $color-grey5 solid !important;
+                  background-color: $color-wh2;
+            }
       }
 
       &__label{
@@ -47,4 +52,6 @@
             margin-top: .8rem;
             margin-bottom: 1rem;
       }
+
+
 }

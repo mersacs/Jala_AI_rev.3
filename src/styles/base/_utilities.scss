@@ -15,10 +15,22 @@
 }
 
 .u-margin-top-bg {
-      margin-top: 6.5rem !important;
+      margin-top: 9rem !important;
 
       @include respond(tab-small) {
-            margin-top: 3rem !important;
+            margin-top: 4rem !important;
+      }
+}
+
+.u-margin-bot-xbg {
+      margin-bottom: 26rem !important;
+
+      @include respond(mid-desktop) {
+            margin-bottom: 15rem !important;
+      }
+      @include respond(tab-small) {
+            margin-bottom: 7rem !important;
+            
       }
 }
 
@@ -34,18 +46,6 @@
       margin-bottom: 2.5rem !important;
 }
 
-.u-margin-top-xbg {
-      margin-top: 26rem !important;
-}
-
-.u-margin-bot-xbg {
-      margin-bottom: 26rem !important;
-
-      @include respond(mid-desktop) {
-            margin-bottom: 15rem !important;
-      }
-      @include respond(tab-small) {
-            margin-bottom: 7rem !important;
-            
-      }
+.u-margin-bot-md{
+      margin-bottom: 4rem !important;
 }

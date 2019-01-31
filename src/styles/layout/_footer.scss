@@ -1,0 +1,110 @@
+.footer{
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(250,250,250,1) 20%, rgba(252,59,48,1) 20%, rgba(252,59,48,1) 100%);
+      padding-top: 13rem;
+      &__card{
+            width: 95%;
+            padding: 5% 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            background-color: $color-wh2;
+            box-shadow: 0 25px 20px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 10px 10px;
+      }
+
+      &__container{
+            width: 30%;
+
+            &:first-child{
+                  padding-left: 3%;
+            }
+
+            & div {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+            }
+      }
+      &__list{
+            list-style: none;
+      }
+      &__item{
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 1.69;
+            display: flex;
+            align-items: center;
+            & span {
+                  color: $color-grn;
+                  font-size: 2.5rem;
+                  margin-right: 1.5rem;
+            }
+      }
+      & p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 1.5;
+            color: $color-bk4;
+            margin: 1rem 0 2rem 0;
+      }
+
+      & h1 {
+            color: $color-bk2;
+            & span {
+                  position: relative;
+
+                  &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        bottom: 4px;
+                        right: 0;
+                        width: 100%;
+                        background-color: $color-rd;
+                        height: 13px;
+                        opacity: .5;
+                  }
+            }
+      }
+
+      & h3 {
+            color: $color-bk5;
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            display: inline;
+            padding-right: 2rem;
+      }
+
+      & hr {
+            border: 1px $color-grey4 solid;
+            margin: 3.6rem 0;
+      }
+
+      &__copyright{
+            color: $color-wh2;
+            display: flex;
+            justify-content: space-between;
+            padding: 3% 0;
+            width: 95%;
+            margin: 0 auto;
+
+            & h4 {
+                  font-weight: 600;
+                  font-size: 1.4rem;
+            }
+
+            & h5 {
+                  font-weight: 300;
+                  font-size: 1.4rem;
+            }
+
+            & div:last-child{
+                  text-align: right;
+            }
+      }
+}

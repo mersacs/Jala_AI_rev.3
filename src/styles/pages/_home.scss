@@ -1,0 +1,68 @@
+
+/* --------------------------------SECTION WORKFLOW----------------------------------- */ 
+
+
+/* --------------------------------SECTION TRY----------------------------------- */ 
+.section-try{
+      position: relative;
+      height: 41rem;
+      & svg {
+            position: absolute;
+            z-index: -1;
+            width: 145rem;
+            top: -115%;
+            left: -2%;
+      }
+}
+
+.try{
+      &__container{
+            width: 50%;
+            margin: 0 auto;
+            & h1 {
+                  font-size: 7rem;
+                  font-weight: 600;
+                  line-height: 1.36;
+                  display: block;
+                  position: relative;
+            }
+
+            & div {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+            }
+
+            & a {
+                  font-weight: 600;
+                  font-size: 1.7rem;
+                  width: 25.5rem;
+                  padding: 1.6rem;
+                  letter-spacing: 0;
+            }
+
+            & p {
+                  font-size: 18px;
+                  font-weight: 300;
+                  width: 60%;
+            }
+      }
+
+      &__quote{
+            &--left{
+                  position: absolute;
+                  color: $color-grn;
+                  left: -4%;
+            }
+            &--right{
+                  position: absolute;
+                  color: $color-grn;
+            }
+      }
+}
+
+/* --------------------------------SECTION FEATURES----------------------------------- */ 
+
+.section-features{
+      background-color: $color-grey3;
+}
