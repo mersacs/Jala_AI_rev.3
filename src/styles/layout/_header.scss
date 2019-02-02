@@ -1,5 +1,12 @@
 .header{
       height: auto;
+
+
+      /// GAWE SPONSOR
+      @include customRespond (1100) {
+            position: relative;
+      }
+
       &__jumbotron{
             padding: 0 6%;
             height: 50rem;
@@ -8,11 +15,23 @@
             justify-content: center;
             background: url(../assets/hero.jpg) no-repeat right top;
             background-color: $color-wh;
-            
+
+            @include respond (big-desktop) {
+                  align-items: flex-start;
+                  padding: 0 20%;
+            }
+            @include respond (tab-port) {
+                  background-position: 20% 0;
+            }
+
             & h1 {
                   color: $color-bk2;
                   width: 50%;
                   
+                  @include respond (big-desktop) {
+                        width: fit-content;
+                  }
+
                   & span {
                         position: relative;
 
@@ -34,6 +53,9 @@
                   font-size: 1.8rem;
                   font-weight: 300;
                   width: 43%;
+                  @include respond (big-desktop) {
+                        width: fit-content;
+                  }
             }
       }
 
@@ -43,12 +65,31 @@
             justify-content: center;
             width: 95%;
             margin: -16rem auto 0;
-
+            
+            @include customRespond (1265) {
+                  width: 98%;
+            }
+            @include customRespond (1100) {
+                  flex-direction: column;
+                  height: auto;
+            }
       }
 
       &__image{
             width: 90rem;
             height: 52rem;
+            
+            @include customRespond (1100) {
+                  align-self: center;
+            }
+            @include customRespond (700) {
+                  width: 90%;
+                  height: 90%;
+            }
+            @include customRespond (550) {
+                  width: 95%;
+                  height: 95%;
+            }
       }
 
 
@@ -65,11 +106,46 @@
             flex-direction: column;
             justify-content: space-between;
 
+            @include respond (mid-desktop) {
+                  padding: 2.5rem 2.3rem;
+            }
+
+            @include customRespond (1265) {
+                  padding: 2.5rem 2rem;
+            }
+
+            @include customRespond (1100) {
+                  align-self: flex-end;
+            }
+
+            @include respond (tab-port) {
+                  padding: 2.5rem 2.5rem;
+            }
+
+            @include customRespond (700) {
+                  width: 60%;
+                  align-self: center;
+                  margin-left: 0;
+                  margin-top: -4rem;
+                  height: auto;
+                  padding: 0.5rem 2.5rem;
+            }
+            @include customRespond (660) {
+                  padding: 0 1vw;
+            }
+            @include customRespond (550) {
+                  width: 75%;
+            }
+
             &__head{
                   display: flex;
                   width: 100%;
                   justify-content: space-between;
                   align-items: center;
+                  @include customRespond (660) {
+                        width: 90%;
+                        margin: 0 auto;
+                  }
             }
             
             &__title{
@@ -79,12 +155,19 @@
                         font-size: 2.4rem;
                         color: $color-wh2;
                         line-height: 1;
+                        @include respond (mid-desktop) {
+                              font-size: 2rem;
+                        }
+
+                        
                   }
                   & h4{
                         color: $color-wh2;
                         font-weight: 300;
                         font-size: 1.4rem;
-                        
+                        @include respond (mid-desktop) {
+                              font-size: 1.2rem;
+                        }
                   }
             }
 
@@ -97,6 +180,10 @@
             &__body{
                   height: auto;
                   margin-top: 2rem;
+                  @include customRespond (700) {
+                        margin-top: 0;
+                  }
+                  
             }
       }
 
@@ -107,16 +194,70 @@
             width: 85%;
             margin: 10rem auto;
             justify-content: space-around;
+            
+            @include respond (big-desktop) {
+                  width: 80%;
+            }
+
+            @include customRespond (1100) {
+                  width: 50%;
+                  flex-wrap: wrap;
+                  position: absolute;
+                  bottom: 15%;
+                  left: 4%;
+            }
+
+            @include customRespond (800) {
+                  width: 40%;
+            }
+
+            @include customRespond (700) {
+                  width: 80%;
+                  flex-wrap: wrap;
+                  position: unset;
+                  margin: 4rem auto;
+                  height: auto;
+            }
 
             &-item{
                   height: 8rem;
                   width: 12%;
+                  
+                  @include customRespond (1100) {
+                        width: 40%;
+                        margin: 2rem 0;
+                  }
+                  @include customRespond (700) {
+                        width: 33%;
+                        position: relative;
+                  }
+
                   & svg{
                         width: 100%;
                         height: 100%;
                         opacity: .3;
+                        @include customRespond (1100) {
+                              width: 80%;
+                              height: 80%;
+                        }
+                        @include customRespond (800) {
+                              width: 90%;
+                              height: 90%;
+                        }
+                        @include customRespond (700) {
+                              width: 70%;
+                              height: 70%;
+                              display: block;
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%,-50%);
+                        }
                   }
+                  
+                  
             }
+            
       }
       
 }

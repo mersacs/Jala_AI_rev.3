@@ -81,19 +81,19 @@ $color-complement-4: #15601E;
       }
 
       @if $breakpoint==mid-desktop {
-            @media only screen and (max-width: 90em) {
+            @media only screen and (max-width: 85em) {
                   @content
             }
 
-            ; // sama dengan media query 1440px untuk mid desktop
+            ; // sama dengan media query 1360px untuk mid desktop
       }
 
       @if $breakpoint==big-desktop {
-            @media only screen and (min-width: 112.5em) {
+            @media only screen and (min-width: 105em) {
                   @content
             }
 
-            ; // sama dengan media query 1800px untuk desktop besar
+            ; // sama dengan media query 1680px untuk desktop besar
       }
 }
 

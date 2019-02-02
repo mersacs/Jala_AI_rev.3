@@ -5,13 +5,29 @@
 
       &__container{
 
+
             &--dashboard{
                   width: 43%;
                   padding-left: 3%;
-                  align-self: center;
+                  align-self: flex-end;
                   &-image{
                         width: 50%;
                         margin-top: -4%;
+
+                        @include respond (tab-land) {
+                              margin: auto 0;
+                        }
+
+                        & img{
+
+                              @include respond (tab-land) {
+                                    width: 90%;
+                              }
+                        }
+                  }
+
+                  @include respond (tab-small){
+                        padding-left: 0;
                   }
             }
 
@@ -22,13 +38,32 @@
                   &-image{
                         width: fit-content;
                         position: relative;
+                        align-self: flex-end;
                         z-index: 0;
+                        @include respond (tab-land) {
+                              margin: auto 0;
+                              width: 45%;
+                        }
+                        & img{
+                              @include respond (tab-land) {
+                                    width: 90%;
+                              }
+                        }
+
                         & svg {
                               position: absolute;
                               top: -5%;
                               right: 5%;
                               z-index: -1;
+                              @include respond (tab-land) {
+                                    top: -6%;
+                                    right: 13%;
+                              }
                         }
+                  }
+
+                  @include customRespond (1100) {
+                        padding: 0 2% 0 7%;
                   }
             }
       }

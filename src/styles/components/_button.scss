@@ -14,9 +14,16 @@
       }
 
       &--transparent{
-                  background-color: transparent;
-                  color: $color-wh2 !important;
-
+            background-color: transparent;
+            color: $color-wh2 !important;
             
+      }
+
+      &--icon{
+            display: flex;
+
+            & span {
+                  padding: 0 1rem;
+            }
       }
 }

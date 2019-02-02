@@ -1,1 +1,1 @@
-# JALA AI rev.3 ( responsive masih belum, masih di 1440px )
+# JALA AI rev.3 ( responsive tinggal size mobile )

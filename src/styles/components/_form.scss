@@ -9,6 +9,22 @@
             &:not(:last-child){
                   margin-bottom: 12px;
             }
+
+            &--header{
+                  @include customRespond (700) {
+                        width: 48%;
+                        &:not(:last-child){
+                              margin-bottom: 1rem;
+                        }
+                  }
+                  //button
+                  &:last-child{
+                        @include customRespond (700) {
+                              width: 70%;
+                              margin: 0 auto;
+                        }
+                  }
+            }
       }
 
       &__input{
@@ -29,6 +45,14 @@
                   border: 1px $color-grey5 solid !important;
                   background-color: $color-wh2;
             }
+            /// UNTUK HEADER
+            &--header{
+                  @include customRespond (700) {
+                        height: 3.5rem;
+                        padding: 1rem 1rem 1rem 4rem;
+                  }
+            }
+
       }
 
       &__label{
@@ -45,6 +69,14 @@
                   height: 100%;
                   width: 100%;
             }
+            /// UNTUK HEADER
+            &--header{
+                  @include customRespond (700) {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        left: 1rem;
+                  }
+            }
       }
 
       & button{
@@ -54,4 +86,22 @@
       }
 
 
+      //// HANYA UNTUK FORM HEADER 
+      &--header{
+
+            @include customRespond (700) {
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: unset;
+                  justify-content: space-around;
+                  & button{
+                        @include customRespond (700) {
+                              height: 3.7rem;
+                              margin-top: 0;
+                              margin-bottom: 1rem;
+                        }
+                  }
+            }
+
+      }
 }

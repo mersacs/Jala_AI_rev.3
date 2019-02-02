@@ -12,25 +12,33 @@
 </head>
 
 <body>
-      <nav class="navigation" >
-            <ul class="navigation__container">
-                  <li class="navigation__item navigation__item--logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                              <rect width="100" height="100" rx="10" fill="#fc0000"/>
-                              <path d="M76,35H0v9.4H21.7L46.1,86.7c2.4,4.1,6.2,4.1,8.6,0L80.3,42.4C82.6,38.3,80.7,35,76,35ZM50.4,73.5,35,44.5H65.8Z" fill="#fff"/>
-                        </svg>
-                  </li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">How it Works</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">Features</a></li>
-                  <li class="navigation__item"><a href="#" class="btn btn--transparent">Login</a></li>
-                  <li class="navigation__item"><a href="#" class="btn btn--red">START FREE TRIAL</a></li>
-            </ul>
-      </nav>
       <header class="header u-margin-bot-xbg" id="home">
+            <nav class="navigation" >
+                  <ul class="navigation__container">
+                        <li class="navigation__item navigation__item--logo">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <rect width="100" height="100" rx="10" fill="#fc0000"/>
+                                    <path d="M76,35H0v9.4H21.7L46.1,86.7c2.4,4.1,6.2,4.1,8.6,0L80.3,42.4C82.6,38.3,80.7,35,76,35ZM50.4,73.5,35,44.5H65.8Z" fill="#fff"/>
+                              </svg>
+                        </li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">How it Works</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Features</a></li>
+                        <li class="navigation__item">
+                              <a href="#" class="btn btn--transparent btn--icon">
+                              <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+                                          <path fill="#FFF" fill-rule="nonzero" d="M13.692 10.92H.42c-.252 0-.42-.168-.42-.42s.168-.42.42-.42h13.272l-3.444-3.444a.406.406 0 0 1 0-.588.406.406 0 0 1 .588 0l4.2 4.2c.084.084.084.168.084.336s0 .252-.084.336l-4.2 4.2a.406.406 0 0 1-.588 0 .406.406 0 0 1 0-.588l3.444-3.612zM18.144 0h-9.24c-.672 0-1.26.588-1.26 1.26v3.36c0 .252.168.42.42.42s.42-.168.42-.42V1.26c0-.252.168-.42.42-.42h9.24c.252 0 .42.168.42.42v18.48c0 .252-.168.42-.42.42h-9.24c-.252 0-.42-.168-.42-.42v-3.36c0-.252-.168-.42-.42-.42s-.42.168-.42.42v3.36c0 .672.588 1.26 1.26 1.26h9.24c.672 0 1.26-.588 1.26-1.26V1.26c0-.672-.588-1.26-1.26-1.26z"/>
+                                    </svg>
+                              </span> 
+                              Login</a>
+                        </li>
+                        <li class="navigation__item"><a href="#" class="btn btn--red">START FREE TRIAL</a></li>
+                  </ul>
+            </nav>
             <div class="header__jumbotron">
-                  <h1 class="heading__1">Convert leads to sales <span>easily</span></h1>
-                  <p>We provide Lead Management System to enhanced your team performance and work faster.</p>
+                  <h1 class="heading__1">Simplify your selling <span>activity</span></h1>
+                  <p>Now, All of your leads are able to be monitored and analyzed quickly.</p>
             </div>
             <div class="header__container">
                   <img src="<%= require('./src/assets/dashboard.png') %>" alt="Jala Ai Dashboard" class="header__image">
@@ -45,40 +53,40 @@
                               </div>
                         </div>
                         <div class="header__form__body">
-                              <form action="" class="form">
-                                    <div class="form__group">
-                                          <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                                          <label for="name" class="form__label">
+                              <form action="" class="form form--header">
+                                    <div class="form__group form__group--header">
+                                          <input type="text" class="form__input form__input--header" placeholder="Full Name" id="name" required>
+                                          <label for="name" class="form__label form__label--header">
                                                 <svg>
                                                       <use xlink:href="assets/form_icon.svg#name"></use>
                                                 </svg>
                                           </label>
                                     </div>
-                                    <div class="form__group">
-                                                <input type="email" class="form__input" placeholder="Email" id="email" required>
-                                                <label for="email" class="form__label">
+                                    <div class="form__group form__group--header">
+                                                <input type="email" class="form__input form__input--header" placeholder="Email" id="email" required>
+                                                <label for="email" class="form__label form__label--header">
                                                       <svg>
                                                             <use xlink:href="assets/form_icon.svg#email"></use>
                                                       </svg>
                                                 </label>
                                     </div>
-                                    <div class="form__group">
-                                          <input type="text" class="form__input" placeholder="Phone" id="phone" required>
-                                          <label for="phone" class="form__label">
+                                    <div class="form__group form__group--header">
+                                          <input type="text" class="form__input form__input--header" placeholder="Phone" id="phone" required>
+                                          <label for="phone" class="form__label form__label--header">
                                                 <svg>
                                                       <use xlink:href="assets/form_icon.svg#phone"></use>
                                                 </svg>
                                           </label>
                                     </div>
-                                    <div class="form__group">
-                                          <input type="text" class="form__input" placeholder="Company" id="company" required>
-                                          <label for="company" class="form__label">
+                                    <div class="form__group form__group--header">
+                                          <input type="text" class="form__input form__input--header" placeholder="Company" id="company" required>
+                                          <label for="company" class="form__label form__label--header">
                                                 <svg>
                                                       <use xlink:href="assets/form_icon.svg#company"></use>
                                                 </svg>
                                           </label>
                                     </div>
-                                    <div class="form__group">
+                                    <div class="form__group form__group--header">
                                           <button class="btn btn--red">Start Free Now</button>
                                     </div>
                               </form>
@@ -245,7 +253,7 @@
                               <div class="card">
                                     <img src="<%= require('./src/assets/about/Online_Lead_Generation_4-01.png') %>" alt="Online" class="card__image">
                                           <p class="paragraph card__desc ">
-                                                Sales officer get leads by using JALA Assistant ( mobile app ). They can follow up and report lead status on this app.
+                                                Sales officer get leads by using JALA Assistant (mobile app). They can follow up and report lead status on this app.
                                     </p>
                               </div>
                               <div class="card">
@@ -296,7 +304,7 @@
                   <div class="try__container">
                         <h1><span class="try__quote--left">“</span>A better way to Simplify your work.<span class="try__quote--right">”</span></h1>
                         <div class="u-margin-top-md">
-                              <a href="#" class="btn btn--red">Get a free for 1 Month</a>
+                              <a href="#" class="btn btn--red">Get a free for 14 days <span>&rarr;</span></a>
                               <p>facilitates you to analyze all performance indicators (Campaign, Lead, and Team) and increase the sales.</p>
                         </div>   
                   </div>
@@ -336,91 +344,91 @@
                         </div>
                   </div>
                   <div class="features">
-                              <div class="features__container--assistant">
-                                    <div class="features__box ">
-                                          <h4 class="heading__4">JALA ASSISTANT</h4>
-                                          <h1 class="heading__1 u-margin-bot-md">Selling Assistant Application for sales officers.</h1>
-                                          <div class="features__item">
-                                                <svg>
-                                                      <use xlink:href="assets/sprite.svg#download"></use>
-                                                </svg>
-                                                <h3 class="heading__3">Grab Leads</h3>
-                                                <p class="paragraph">Every day, sales officers will be updated with new leads in real time.</p>
-                                          </div>
-                                          <div class="features__item">
-                                                <svg>
-                                                      <use xlink:href="assets/sprite.svg#call"></use>
-                                                </svg>
-                                                <h3 class="heading__3">Follow Up</h3>
-                                                <p class="paragraph">Be easier to follow up every lead.</p>
-                                          </div>
-                                          <div class="features__item">
-                                                <svg>
-                                                      <use xlink:href="assets/sprite.svg#notification"></use>
-                                                </svg>
-                                                <h3 class="heading__3">Self Alert</h3>
-                                                <p class="paragraph">Measure self-performance with all lead performance statistics and also notification feature.</p>
-                                          </div>
-                                          <div class="features__item">
-                                                <svg>
-                                                      <use xlink:href="assets/sprite.svg#search"></use>
-                                                </svg>
-                                                <h3 class="heading__3">Activity History</h3>
-                                                <p class="paragraph">Every activity that sales officers did could be input and manage on Jala Assistant. So it’s very helpful for sales officers to know all histories of leads without making notes on sheet or notebook.</p>
-                                          </div>
-                                          <div class="features__item">
-                                                <svg>
-                                                      <use xlink:href="assets/sprite.svg#plus"></use>
-                                                </svg>
-                                                <h3 class="heading__3">Manual Lead Input</h3>
-                                                <p class="paragraph">If sales officers want to do canvassing, they can easily input lead data to Jala Assistant.</p>
-                                          </div>
+                        <div class="features__container--assistant">
+                              <div class="features__box ">
+                                    <h4 class="heading__4">JALA ASSISTANT</h4>
+                                    <h1 class="heading__1 u-margin-bot-md">Selling Assistant Application for sales officers.</h1>
+                                    <div class="features__item">
+                                          <svg>
+                                                <use xlink:href="assets/sprite.svg#download"></use>
+                                          </svg>
+                                          <h3 class="heading__3">Grab Leads</h3>
+                                          <p class="paragraph">Every day, sales officers will be updated with new leads in real time.</p>
+                                    </div>
+                                    <div class="features__item">
+                                          <svg>
+                                                <use xlink:href="assets/sprite.svg#call"></use>
+                                          </svg>
+                                          <h3 class="heading__3">Follow Up</h3>
+                                          <p class="paragraph">Be easier to follow up every lead.</p>
+                                    </div>
+                                    <div class="features__item">
+                                          <svg>
+                                                <use xlink:href="assets/sprite.svg#notification"></use>
+                                          </svg>
+                                          <h3 class="heading__3">Self Alert</h3>
+                                          <p class="paragraph">Measure self-performance with all lead performance statistics and also notification feature.</p>
+                                    </div>
+                                    <div class="features__item">
+                                          <svg>
+                                                <use xlink:href="assets/sprite.svg#search"></use>
+                                          </svg>
+                                          <h3 class="heading__3">Activity History</h3>
+                                          <p class="paragraph">Every activity that sales officers did could be input and manage on Jala Assistant. So it’s very helpful for sales officers to know all histories of leads without making notes on sheet or notebook.</p>
+                                    </div>
+                                    <div class="features__item">
+                                          <svg>
+                                                <use xlink:href="assets/sprite.svg#plus"></use>
+                                          </svg>
+                                          <h3 class="heading__3">Manual Lead Input</h3>
+                                          <p class="paragraph">If sales officers want to do canvassing, they can easily input lead data to Jala Assistant.</p>
                                     </div>
                               </div>
-                              <div class="features__container--assistant-image u-margin-bot-xbg">
-                                    <img src="<%= require('./src/assets/iphoneblack.png') %>" alt="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
-                                          <g fill="#129F9F" fill-rule="evenodd" opacity=".66">
-                                                <circle cx="3" cy="3" r="3"/>
-                                                <circle cx="22" cy="3" r="3"/>
-                                                <circle cx="41" cy="3" r="3"/>
-                                                <circle cx="79" cy="3" r="3"/>
-                                                <circle cx="60" cy="3" r="3"/>
-                                                <circle cx="98" cy="3" r="3"/>
-                                                <circle cx="3" cy="22" r="3"/>
-                                                <circle cx="22" cy="22" r="3"/>
-                                                <circle cx="41" cy="22" r="3"/>
-                                                <circle cx="79" cy="22" r="3"/>
-                                                <circle cx="60" cy="22" r="3"/>
-                                                <circle cx="98" cy="22" r="3"/>
-                                                <circle cx="3" cy="41" r="3"/>
-                                                <circle cx="22" cy="41" r="3"/>
-                                                <circle cx="41" cy="41" r="3"/>
-                                                <circle cx="79" cy="41" r="3"/>
-                                                <circle cx="60" cy="41" r="3"/>
-                                                <circle cx="98" cy="41" r="3"/>
-                                                <circle cx="3" cy="60" r="3"/>
-                                                <circle cx="22" cy="60" r="3"/>
-                                                <circle cx="41" cy="60" r="3"/>
-                                                <circle cx="79" cy="60" r="3"/>
-                                                <circle cx="60" cy="60" r="3"/>
-                                                <circle cx="98" cy="60" r="3"/>
-                                                <circle cx="3" cy="79" r="3"/>
-                                                <circle cx="22" cy="79" r="3"/>
-                                                <circle cx="41" cy="79" r="3"/>
-                                                <circle cx="79" cy="79" r="3"/>
-                                                <circle cx="60" cy="79" r="3"/>
-                                                <circle cx="98" cy="79" r="3"/>
-                                                <circle cx="3" cy="98" r="3"/>
-                                                <circle cx="22" cy="98" r="3"/>
-                                                <circle cx="41" cy="98" r="3"/>
-                                                <circle cx="79" cy="98" r="3"/>
-                                                <circle cx="60" cy="98" r="3"/>
-                                                <circle cx="98" cy="98" r="3"/>
-                                          </g>
-                                    </svg>
-                              </div>
                         </div>
+                        <div class="features__container--assistant-image">
+                              <img src="<%= require('./src/assets/iphoneblack.png') %>" alt="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
+                                    <g fill="#129F9F" fill-rule="evenodd" opacity=".66">
+                                          <circle cx="3" cy="3" r="3"/>
+                                          <circle cx="22" cy="3" r="3"/>
+                                          <circle cx="41" cy="3" r="3"/>
+                                          <circle cx="79" cy="3" r="3"/>
+                                          <circle cx="60" cy="3" r="3"/>
+                                          <circle cx="98" cy="3" r="3"/>
+                                          <circle cx="3" cy="22" r="3"/>
+                                          <circle cx="22" cy="22" r="3"/>
+                                          <circle cx="41" cy="22" r="3"/>
+                                          <circle cx="79" cy="22" r="3"/>
+                                          <circle cx="60" cy="22" r="3"/>
+                                          <circle cx="98" cy="22" r="3"/>
+                                          <circle cx="3" cy="41" r="3"/>
+                                          <circle cx="22" cy="41" r="3"/>
+                                          <circle cx="41" cy="41" r="3"/>
+                                          <circle cx="79" cy="41" r="3"/>
+                                          <circle cx="60" cy="41" r="3"/>
+                                          <circle cx="98" cy="41" r="3"/>
+                                          <circle cx="3" cy="60" r="3"/>
+                                          <circle cx="22" cy="60" r="3"/>
+                                          <circle cx="41" cy="60" r="3"/>
+                                          <circle cx="79" cy="60" r="3"/>
+                                          <circle cx="60" cy="60" r="3"/>
+                                          <circle cx="98" cy="60" r="3"/>
+                                          <circle cx="3" cy="79" r="3"/>
+                                          <circle cx="22" cy="79" r="3"/>
+                                          <circle cx="41" cy="79" r="3"/>
+                                          <circle cx="79" cy="79" r="3"/>
+                                          <circle cx="60" cy="79" r="3"/>
+                                          <circle cx="98" cy="79" r="3"/>
+                                          <circle cx="3" cy="98" r="3"/>
+                                          <circle cx="22" cy="98" r="3"/>
+                                          <circle cx="41" cy="98" r="3"/>
+                                          <circle cx="79" cy="98" r="3"/>
+                                          <circle cx="60" cy="98" r="3"/>
+                                          <circle cx="98" cy="98" r="3"/>
+                                    </g>
+                              </svg>
+                        </div>
+                  </div>
             </section>
       </main>
       <footer class="footer" id="footer">
@@ -494,15 +502,19 @@
                         </ul>
                         <hr>
                         <div>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#FC3B30" fill-rule="nonzero" d="M22.587 18.625c.6.6.6 1.6 0 2.1l-1.7 1.7c-1.7 1.7-4.4 2-6.5.6-2.5-1.7-5.8-4.1-7.6-5.9-1.8-1.8-4.2-5.1-5.9-7.6-1.4-2-1.1-4.7.6-6.5l1.7-1.7c.6-.6 1.6-.6 2.1 0l2.9 2.9c.6.6.6 1.6 0 2.1l-1.2 1.2c-.3.3-.4.8-.1 1.2.7 1.1 2 3.2 3.5 4.7s3.6 2.9 4.7 3.5c.4.2.9.2 1.2-.1l1.2-1.2c.6-.6 1.6-.6 2.1 0l3 3zm-3.8-7.1c.1.1.2.1.4.1s.3 0 .4-.1c.9-.9 1.5-2.2 1.5-3.5 0-1.3-.5-2.6-1.5-3.5-1-.9-2.2-1.5-3.5-1.5-1.3 0-2.6.5-3.5 1.5-.2.2-.2.5 0 .7.2.2.5.2.7 0 .8-.8 1.8-1.2 2.8-1.2 1 0 2.1.4 2.8 1.2.8.8 1.2 1.8 1.2 2.8 0 1-.4 2.1-1.2 2.8-.3.2-.3.5-.1.7zm-7.8-8.5c2.7-2.7 7.2-2.7 9.9 0s2.7 7.2 0 9.9c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1c3.1-3.1 3.1-8.2 0-11.3-3.1-3.1-8.2-3.1-11.3 0-.2.2-.2.5 0 .7.2.2.5.2.6 0z"/>
-                              </svg>
-                              <h3>021 - 22521174</h3>
+                              <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                          <path fill="#FC3B30" fill-rule="nonzero" d="M22.587 18.625c.6.6.6 1.6 0 2.1l-1.7 1.7c-1.7 1.7-4.4 2-6.5.6-2.5-1.7-5.8-4.1-7.6-5.9-1.8-1.8-4.2-5.1-5.9-7.6-1.4-2-1.1-4.7.6-6.5l1.7-1.7c.6-.6 1.6-.6 2.1 0l2.9 2.9c.6.6.6 1.6 0 2.1l-1.2 1.2c-.3.3-.4.8-.1 1.2.7 1.1 2 3.2 3.5 4.7s3.6 2.9 4.7 3.5c.4.2.9.2 1.2-.1l1.2-1.2c.6-.6 1.6-.6 2.1 0l3 3zm-3.8-7.1c.1.1.2.1.4.1s.3 0 .4-.1c.9-.9 1.5-2.2 1.5-3.5 0-1.3-.5-2.6-1.5-3.5-1-.9-2.2-1.5-3.5-1.5-1.3 0-2.6.5-3.5 1.5-.2.2-.2.5 0 .7.2.2.5.2.7 0 .8-.8 1.8-1.2 2.8-1.2 1 0 2.1.4 2.8 1.2.8.8 1.2 1.8 1.2 2.8 0 1-.4 2.1-1.2 2.8-.3.2-.3.5-.1.7zm-7.8-8.5c2.7-2.7 7.2-2.7 9.9 0s2.7 7.2 0 9.9c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1c3.1-3.1 3.1-8.2 0-11.3-3.1-3.1-8.2-3.1-11.3 0-.2.2-.2.5 0 .7.2.2.5.2.6 0z"/>
+                                    </svg>
+                                    <h3>021 - 22521174</h3>
+                              </div>
+                              <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26">
+                                          <path fill="#FC3B30" fill-rule="nonzero" d="M20.87 3.13h-4.174v4.696c0 .313-.209.522-.522.522-.313 0-.522-.209-.522-.522V1.565c0-.313.209-.522.522-.522h2.087c.313 0 .522-.208.522-.521 0-.313-.21-.522-.522-.522h-2.087c-.835 0-1.565.73-1.565 1.565V3.13H5.217C2.296 3.13 0 5.426 0 8.348v6.782c0 .835.73 1.566 1.565 1.566h12V24H12c-.313 0-.522.209-.522.522 0 .313.209.521.522.521h5.217c.313 0 .522-.208.522-.521 0-.313-.209-.522-.522-.522h-1.565v-7.304h6.783c.835 0 1.565-.73 1.565-1.566V6.26c0-1.773-1.357-3.13-3.13-3.13zM9.39 15.652H1.565c-.313 0-.522-.209-.522-.522V8.348a4.186 4.186 0 0 1 4.174-4.174 4.186 4.186 0 0 1 4.174 4.174v7.304zm-1.565-3.13c.313 0 .522.208.522.521 0 .314-.209.522-.522.522H2.61c-.313 0-.522-.208-.522-.522 0-.313.209-.521.522-.521h5.217z"/>
+                                    </svg>
+                                    <h3>sales@jala.ai</h3>
+                              </div>
                               
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26">
-                                    <path fill="#FC3B30" fill-rule="nonzero" d="M20.87 3.13h-4.174v4.696c0 .313-.209.522-.522.522-.313 0-.522-.209-.522-.522V1.565c0-.313.209-.522.522-.522h2.087c.313 0 .522-.208.522-.521 0-.313-.21-.522-.522-.522h-2.087c-.835 0-1.565.73-1.565 1.565V3.13H5.217C2.296 3.13 0 5.426 0 8.348v6.782c0 .835.73 1.566 1.565 1.566h12V24H12c-.313 0-.522.209-.522.522 0 .313.209.521.522.521h5.217c.313 0 .522-.208.522-.521 0-.313-.209-.522-.522-.522h-1.565v-7.304h6.783c.835 0 1.565-.73 1.565-1.566V6.26c0-1.773-1.357-3.13-3.13-3.13zM9.39 15.652H1.565c-.313 0-.522-.209-.522-.522V8.348a4.186 4.186 0 0 1 4.174-4.174 4.186 4.186 0 0 1 4.174 4.174v7.304zm-1.565-3.13c.313 0 .522.208.522.521 0 .314-.209.522-.522.522H2.61c-.313 0-.522-.208-.522-.522 0-.313.209-.521.522-.521h5.217z"/>
-                              </svg>
-                              <h3>sales@jala.ai</h3>
                         </div>
                   </div>
                   <div class="footer__container">

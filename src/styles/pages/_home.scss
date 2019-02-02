@@ -9,9 +9,14 @@
       & svg {
             position: absolute;
             z-index: -1;
-            width: 145rem;
-            top: -115%;
-            left: -2%;
+            width: 91%;
+            top: -130%;
+            left: -3%;
+      }
+
+      @include respond (tab-small){
+            height: 45rem;
+            padding-top: 10rem;
       }
 }
 
@@ -19,6 +24,15 @@
       &__container{
             width: 50%;
             margin: 0 auto;
+
+            @include customRespond (1336) {
+                  width: 70%;
+            }
+
+            @include respond (tab-small){
+                  margin: auto auto;
+            }
+
             & h1 {
                   font-size: 7rem;
                   font-weight: 600;
@@ -31,6 +45,9 @@
                   display: flex;
                   align-items: center;
                   justify-content: space-between;
+                  @include customRespond (1336) {
+                        justify-content: flex-start;
+                  }
             }
 
             & a {
@@ -39,12 +56,20 @@
                   width: 25.5rem;
                   padding: 1.6rem;
                   letter-spacing: 0;
+
+                  & span {
+                        padding: 0 1rem;
+                  }
             }
 
             & p {
-                  font-size: 18px;
+                  font-size: 1.8rem;
                   font-weight: 300;
                   width: 60%;
+                  @include customRespond (1336) {
+                        margin-left: 2rem;
+                        width: 65%;
+                  }
             }
       }
 
@@ -65,4 +90,7 @@
 
 .section-features{
       background-color: $color-grey3;
+      @include respond (tab-land) {
+            padding-top: 10rem;
+      }
 }
