@@ -10,6 +10,10 @@
       transform: rotatey(0deg);
       backface-visibility: hidden;
       transition: 2s;
+      position: relative;
+      @include customRespond(438){
+            width: 40vw;
+      }
 
       &:before{
             content: "";
@@ -23,7 +27,7 @@
             transform: skewy(15deg);
             transition: .7s;
       }
-
+      
       &:hover:before{
             height: 140%;
       }
@@ -39,14 +43,17 @@
             z-index: -2;
       }
       &__image{
-            width: 100%;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
             margin: 0 auto;
             display: block;
-            flex-basis: 40%;
+            position: absolute;
+            // flex-basis: 40%;
       }
 
       &__desc{
-            padding-top: 2rem;
+            padding-top: 100%;
             text-align: center;
             width: 100% !important;
       }

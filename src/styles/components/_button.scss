@@ -21,9 +21,12 @@
 
       &--icon{
             display: flex;
-
+            align-items: center;
             & span {
                   padding: 0 1rem;
+                  position: relative;
+                  top: .3rem;
+                  
             }
       }
 }

@@ -2,14 +2,23 @@
       display: flex;
       flex-direction: row;
       width: 100%;
+      @include respond (tab-small){
+            flex-direction: column-reverse;
+      }
 
       &__container{
-
 
             &--dashboard{
                   width: 43%;
                   padding-left: 3%;
                   align-self: flex-end;
+                  @include respond (tab-small){
+                        padding-left: 0;
+                        width: 90vw;
+                        max-width: 70rem;
+                        align-self: center;
+                        margin-bottom: 5vw;
+                  }
                   &-image{
                         width: 50%;
                         margin-top: -4%;
@@ -17,17 +26,20 @@
                         @include respond (tab-land) {
                               margin: auto 0;
                         }
+                        @include respond (tab-small){
+                              width: 100%;
+                        }
 
                         & img{
 
                               @include respond (tab-land) {
                                     width: 90%;
                               }
+                              @include respond (tab-small){
+                                    width: 80%;
+                                    max-width: 450px;
+                              }
                         }
-                  }
-
-                  @include respond (tab-small){
-                        padding-left: 0;
                   }
             }
 
@@ -35,18 +47,40 @@
                   width: 55%;
                   align-self: center;
                   padding: 0 7%;
+
+                  @include customRespond (1100) {
+                        padding: 0 2% 0 7%;
+                  }
+                  @include respond (tab-small){
+                        order: 1;
+                        width: 90vw;
+                        max-width: 70rem;
+                        margin-bottom: 5vw;
+                        padding: 0;
+                  }
                   &-image{
                         width: fit-content;
                         position: relative;
                         align-self: flex-end;
                         z-index: 0;
+
                         @include respond (tab-land) {
                               margin: auto 0;
                               width: 45%;
+
                         }
+                        @include respond (tab-small){
+                              width: 90vw;
+                              max-width: 45rem;
+                              align-self: center;
+                        }
+
                         & img{
                               @include respond (tab-land) {
                                     width: 90%;
+                              }
+                              @include respond (tab-small){
+                                    width: 100%;
                               }
                         }
 
@@ -55,15 +89,16 @@
                               top: -5%;
                               right: 5%;
                               z-index: -1;
+
                               @include respond (tab-land) {
                                     top: -6%;
                                     right: 13%;
                               }
+                              @include respond (tab-small){
+                                    top: -5%;
+                                    right: 5%;
+                              }
                         }
-                  }
-
-                  @include customRespond (1100) {
-                        padding: 0 2% 0 7%;
                   }
             }
       }

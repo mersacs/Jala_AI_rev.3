@@ -9,6 +9,7 @@
 
       &__jumbotron{
             padding: 0 6%;
+            // width: auto;
             height: 50rem;
             display: flex;
             flex-direction: column;
@@ -17,8 +18,8 @@
             background-color: $color-wh;
 
             @include respond (big-desktop) {
-                  align-items: flex-start;
-                  padding: 0 20%;
+                  align-items: center;
+                  
             }
             @include respond (tab-port) {
                   background-position: 20% 0;
@@ -30,6 +31,13 @@
                   
                   @include respond (big-desktop) {
                         width: fit-content;
+                  }
+                  @include customRespond (1100) {
+                        width: 65vw;
+                        max-width: 550px;
+                  }
+                  @include customRespond(438){
+                        width: 70vw;
                   }
 
                   & span {
@@ -55,6 +63,13 @@
                   width: 43%;
                   @include respond (big-desktop) {
                         width: fit-content;
+                  }
+                  @include customRespond (1100) {
+                        width: 60vw;
+                        max-width: 500px;
+                  }
+                  @include customRespond(438){
+                        width: 70vw;
                   }
             }
       }
@@ -123,19 +138,22 @@
             }
 
             @include customRespond (700) {
-                  width: 60%;
+                  width: 75%;
                   align-self: center;
                   margin-left: 0;
                   margin-top: -4rem;
                   height: auto;
                   padding: 0.5rem 2.5rem;
             }
-            @include customRespond (660) {
-                  padding: 0 1vw;
+            @include customRespond (500) {
+                  width: 75vw;
+                  max-width: 300px;
+                  padding: 1.5rem 2.5rem;
+                  margin-top: 5vw;
+                  background-color: transparent;
+                  box-shadow: 0 0px 35px 0 rgba(0, 0, 0, 0.15);
             }
-            @include customRespond (550) {
-                  width: 75%;
-            }
+            
 
             &__head{
                   display: flex;
@@ -143,13 +161,13 @@
                   justify-content: space-between;
                   align-items: center;
                   @include customRespond (660) {
-                        width: 90%;
+                        width: 97%;
                         margin: 0 auto;
                   }
             }
             
             &__title{
-
+                  
                   & h3{
                         font-weight: 500;  
                         font-size: 2.4rem;
@@ -158,7 +176,9 @@
                         @include respond (mid-desktop) {
                               font-size: 2rem;
                         }
-
+                        @include customRespond (500) {
+                              color: $color-bk3;
+                        }
                         
                   }
                   & h4{
@@ -168,12 +188,32 @@
                         @include respond (mid-desktop) {
                               font-size: 1.2rem;
                         }
+                        @include customRespond (500) {
+                              color: $color-rd2;
+                        }
                   }
             }
 
             &__playstore{
                   width: 17rem;
                   height: 6.4rem;
+
+                  @include customRespond (500) {
+                        width: 27vw;
+                        max-width: 100px;
+                        align-self: center;
+                        height: fit-content;
+                        
+                        & svg .kotak {
+                              fill: transparent;
+                        }
+                        & svg .border {
+                              fill: $color-grey5;
+                        }
+                        & svg .text-1, & svg .text-2 {
+                              fill: $color-bk4;
+                        }
+                  }
             }
 
 
