@@ -28,7 +28,7 @@
       }
 
       &__container{
-            width: 30%;
+            width: 33%;
             @include customRespond(1100){
                   width: 90%;
             }
@@ -37,7 +37,7 @@
             }
 
             &:first-child{
-                  padding-left: 3%;
+                  width: fit-content;
 
                   @include customRespond(1100){
                         padding-left: 0;
@@ -77,12 +77,13 @@
                   }
 
                   & div {
-                        @include customRespond(1100){
-                              flex-basis: 40%;
-                        }
                         @include respond(tab-small){
                               flex-basis: auto;
                               margin-right: 2vw;
+                        }
+                        
+                        & h3 {
+                              width: 100%;
                         }
                   }
             }

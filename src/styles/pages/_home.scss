@@ -113,7 +113,6 @@
 
 .section-features{
       background-color: $color-grey3;
-      @include respond (tab-land) {
-            padding-top: 10rem;
-      }
+      padding-top: 5vw;
+      
 }

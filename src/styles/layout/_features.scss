@@ -2,106 +2,143 @@
       display: flex;
       flex-direction: row;
       width: 100%;
+      @include respond (big-desktop) {
+            width: 159rem;
+            margin: 0 auto;
+      }
       @include respond (tab-small){
             flex-direction: column-reverse;
       }
 
-      &__container{
-
-            &--dashboard{
-                  width: 43%;
-                  padding-left: 3%;
-                  align-self: flex-end;
-                  @include respond (tab-small){
-                        padding-left: 0;
-                        width: 90vw;
-                        max-width: 70rem;
-                        align-self: center;
-                        margin-bottom: 5vw;
-                  }
-                  &-image{
-                        width: 50%;
-                        margin-top: -4%;
-
-                        @include respond (tab-land) {
-                              margin: auto 0;
-                        }
-                        @include respond (tab-small){
-                              width: 100%;
-                        }
-
-                        & img{
-
-                              @include respond (tab-land) {
-                                    width: 90%;
-                              }
-                              @include respond (tab-small){
-                                    width: 80%;
-                                    max-width: 450px;
-                              }
-                        }
-                  }
-            }
-
-            &--assistant{
-                  width: 55%;
+      &__container--dashboard{
+            width: 43%;
+            // padding-left: 3%;
+            align-self: flex-end;
+            @include respond (tab-small){
+                  padding-left: 0;
+                  width: 90vw;
+                  max-width: 70rem;
                   align-self: center;
-                  padding: 0 7%;
-
-                  @include customRespond (1100) {
-                        padding: 0 2% 0 7%;
-                  }
+                  margin-bottom: 5vw;
+            }
+            &-image{
+                  
+                  width: 50%;
+                  position: relative;
+                  align-self: stretch;
                   @include respond (tab-small){
-                        order: 1;
-                        width: 90vw;
-                        max-width: 70rem;
-                        margin-bottom: 5vw;
-                        padding: 0;
+                        width: 100%;
+                        height: 55vw; // Height memakai ukuran konten image
                   }
-                  &-image{
-                        width: fit-content;
-                        position: relative;
-                        align-self: flex-end;
-                        z-index: 0;
 
-                        @include respond (tab-land) {
-                              margin: auto 0;
-                              width: 45%;
+                  & img{
+                        padding-top: 20%;
+                        width: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
 
-                        }
+                        
                         @include respond (tab-small){
-                              width: 90vw;
-                              max-width: 45rem;
-                              align-self: center;
-                        }
-
-                        & img{
-                              @include respond (tab-land) {
-                                    width: 90%;
-                              }
-                              @include respond (tab-small){
-                                    width: 100%;
-                              }
-                        }
-
-                        & svg {
-                              position: absolute;
-                              top: -5%;
-                              right: 5%;
-                              z-index: -1;
-
-                              @include respond (tab-land) {
-                                    top: -6%;
-                                    right: 13%;
-                              }
-                              @include respond (tab-small){
-                                    top: -5%;
-                                    right: 5%;
-                              }
+                              width: 80vw;
+                              top: 0;
+                              left: 50%;
+                              transform: translateX(-50%);
+                              padding-top: 0;
                         }
                   }
             }
       }
+
+      &__image__dashboard--show{
+            
+            opacity: 1 !important;
+            visibility: visible !important;
+      }
+
+/////////////// ASSISTANT 
+
+
+      &__container--assistant{
+            width: 55%;
+            align-self: center;
+            padding: 0 7%;
+
+            @include customRespond (1100) {
+                  padding: 0 2% 0 7%;
+            }
+            @include respond (tab-small){
+                  order: 1;
+                  width: 90vw;
+                  max-width: 70rem;
+                  margin-bottom: 5vw;
+                  padding: 0;
+            }
+            &-image{
+                  width: 45%;
+                  position: relative;
+                  align-self: stretch;
+                  z-index: 0;
+                  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+                  @include respond (tab-land) {
+                        width: 45%;
+
+                  }
+                  @include respond (tab-small){
+                        width: 90vw;
+                        height: 80vw;
+                        align-self: center;
+                  }
+
+                  & img{
+                        padding-top: 20%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+                        @include respond (tab-land) {
+                              padding-top: 27%;
+                              height: 95%;
+                        }
+                        @include respond (tab-small){
+                              padding-top: 0;
+                              height: 80vw;
+                        }
+                  }
+
+                  & svg {
+                        position: absolute;
+                        bottom: 78%;
+                        right: 13%;
+                        z-index: -1;
+                        height: 13%;
+                        
+                        @include respond (tab-land) {
+                              bottom: 78%;
+                              right: 17%;
+                        }
+                        @include respond (tab-small){
+                              top: -6%;
+                              right: 22%;
+                        }
+                  }
+            }
+      }
+
+      &__image__assistant--show{
+            opacity: 1 !important;
+            visibility: visible !important;
+      }
+
+///// -------------------------------------------- //////
             
       &__box{
             height: auto;
@@ -111,12 +148,26 @@
             margin-bottom: 3.2rem;
             position: relative;
             padding-left: 6.4rem;
+            transition: all .7s cubic-bezier(0.215, 0.610, 0.355, 1);
+            -webkit-tap-highlight-color: transparent;
+            cursor: pointer;
             & svg {
                   position: absolute;
                   top: 1rem;
                   left: 0;
                   width: 3.6rem;
                   height: 3.6rem;
+                  fill: #FC574D;
+                  transition: all .7s cubic-bezier(0.215, 0.610, 0.355, 1);
+            }
+            &:hover{
+                  transform: translateY(-1vw);
+                  & svg {
+                        fill: $color-grn;
+                  }
+            }
+            & :focus {
+                  outline: none !important;
             }
       }
 }

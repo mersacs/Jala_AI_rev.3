@@ -26,6 +26,10 @@ html {
             //if lebar layar <= 900px
             font-size: 50%; // 1 rem = 8px ; 8px/16px = 50%
       }
+
+      // @include respond(big-desktop) { //if lebar layar >= 1800px
+	// 	font-size: 70%; // 1 rem = 12px ; 12px/16px = 75%
+	// }
 }
 
 body {

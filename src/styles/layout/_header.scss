@@ -30,7 +30,7 @@
                   width: 50%;
                   
                   @include respond (big-desktop) {
-                        width: fit-content;
+                        width: 127rem;
                   }
                   @include customRespond (1100) {
                         width: 65vw;
@@ -62,7 +62,7 @@
                   font-weight: 300;
                   width: 43%;
                   @include respond (big-desktop) {
-                        width: fit-content;
+                        width: 127rem;
                   }
                   @include customRespond (1100) {
                         width: 60vw;
@@ -236,7 +236,7 @@
             justify-content: space-around;
             
             @include respond (big-desktop) {
-                  width: 80%;
+                  width: 127rem;
             }
 
             @include customRespond (1100) {
