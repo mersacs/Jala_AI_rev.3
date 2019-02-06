@@ -19,11 +19,14 @@
                                           'gambar form';
             }
             @include respond(tab-small){
-                  grid-template-areas:    'try try'
-                                          'gambar form';
-                  grid-template-rows: auto auto;
-                  grid-template-columns: 30vw 1fr;
-                  padding-right: 0;
+                  grid-template-areas:    'gambar gambar'
+                                          'try try'
+                                          'form form';
+                  grid-template-rows: auto auto auto;
+                  grid-template-columns: 50% 50%;
+                  grid-row-gap: 5vw;
+                  padding: 0% 5% 5%;
+                  width: 90%;
             }
       }
 
@@ -43,12 +46,19 @@
                         padding-left: 0;
                         grid-area: gambar;
                   }
-
+                  @include respond(tab-small){
+                        margin: 0 auto;
+                  }
+                  @include customRespond(660){
+                        margin-top: 5vw;
+                        margin-bottom: 3vw;
+                  }
                   & svg {
                         @include respond(tab-small){
-                              width: 30vw;
-                              max-width: 37.125rem;
-                              height: calc(58vw + 7px);
+                              width: 60vw;
+                              max-width: 30rem;
+                              height: 60vw;
+                              max-height: 57rem;
                         }
                   }
             }
@@ -59,8 +69,7 @@
                         margin-bottom: 3rem;
                   }
                   @include respond(tab-small){
-                        width: 84vw;
-                        max-width: 65rem;
+                        width: 100%;
                         margin-bottom: 0;
                   }
                   @include customRespond(450){
@@ -94,10 +103,13 @@
                         grid-area: form;
                   }
                   @include respond(tab-small){
-                        width: 50vw;
-                        padding: 0 3vw;
-                        max-width: 40rem;
+                        width: 80vw;
+                        max-width: 100rem;
                         margin: 0 auto;
+                  }
+                  @include customRespond(550){
+                        width: 80vw;
+                        max-width: 30rem;
                   }
                   @include customRespond(450){
                         padding: 0 0;

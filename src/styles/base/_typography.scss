@@ -18,6 +18,9 @@
       font-size: 1.6rem;
       font-weight: 300;
       color: $color-bk4;
+      @include respond (tab-small){
+            font-size: calc(1.6rem + 2px);
+      }
 }
 
 .heading__3{

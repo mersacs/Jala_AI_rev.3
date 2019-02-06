@@ -3,32 +3,39 @@
       height: 100%;
       display: flex;
       flex-direction: column;
+
+      @include respond(tab-small){
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: unset;
+            justify-content: space-around;
+      }
+      @include respond(550){
+            display: flex;
+            flex-direction: column;
+            flex-wrap: unset;
+      }
       
+
       &__group{
             position: relative;
             &:not(:last-child){
                   margin-bottom: 12px;
             }
-
-            &--header{
-                  @include customRespond (700) {
-                        width: 48%;
-                        &:not(:last-child){
-                              margin-bottom: 1rem;
-                        }
+            //// 
+            @include respond(tab-small){
+                  width: 48%;
+                  &:not(:last-child){
+                        margin-bottom: 2rem;
                   }
-                  @include customRespond (500) {
-                        width: 100%;
-                  }
-                  //button
-                  &:last-child{
-                        @include customRespond (700) {
-                              width: 70%;
-                              margin: 0 auto;
-                        }
-                        @include customRespond (500) {
-                              width: 100%;
-                        }
+            }
+            @include customRespond(550){
+                  width: 100%;
+            }
+            &:last-child{
+                  @include respond(tab-small){
+                        width: 98%;
+                        margin: 0 auto;
                   }
             }
       }
@@ -45,7 +52,10 @@
             @include respond(tab-small){
                   padding-left: 4rem;
             }
-
+            @include respond(tab-small){
+                  height: 4.5rem;
+                  padding: 1.5rem 1.5rem 1.5rem 4rem;
+            }
             &::placeholder{
                   color: $color-grey;
             }
@@ -55,12 +65,9 @@
                   background-color: $color-wh2;
             }
             /// UNTUK HEADER
+            
             &--header{
-                  @include customRespond (700) {
-                        height: 3.5rem;
-                        padding: 1rem 1rem 1rem 4rem;
-                  }
-                  @include customRespond (500) {
+                  @include respond(tab-small){
                         border: 1px $color-grey5 solid;
                         background-color: $color-wh2;
                         height: 4.5rem;
@@ -93,44 +100,22 @@
                   width: 100%;
             }
             /// UNTUK HEADER
-            &--header{
-                  @include customRespond (700) {
-                        width: 1.8rem;
-                        height: 1.8rem;
-                        left: 1rem;
-                  }
-            }
       }
 
       & button{
             height: 5rem;
             margin-top: .8rem;
             margin-bottom: 1rem;
+            @include respond(tab-small){
+                  height: 4.5rem;
+                  margin-top: 0;
+                  margin-bottom: 1rem;
+            }
+            
       }
 
 
       //// HANYA UNTUK FORM HEADER 
-      &--header{
 
-            @include customRespond (700) {
-                  display: flex;
-                  flex-wrap: wrap;
-                  flex-direction: unset;
-                  justify-content: space-around;
-                  & button{
-                        @include customRespond (700) {
-                              height: 3.7rem;
-                              margin-top: 0;
-                              margin-bottom: 1rem;
-                        }
-                        @include customRespond (500) {
-                              height: 4.5rem;
-                        }
-                  }
-            }
-            @include customRespond (500) {
-                  flex-wrap: unset;
-                  flex-direction: column;
-            }
-      }
+      
 }

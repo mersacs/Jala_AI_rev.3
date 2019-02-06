@@ -7,7 +7,7 @@
             margin: 0 auto;
       }
       @include respond (tab-small){
-            flex-direction: column-reverse;
+            flex-direction: column;
       }
 
       &__container--dashboard{
@@ -29,6 +29,7 @@
                   @include respond (tab-small){
                         width: 100%;
                         height: 55vw; // Height memakai ukuran konten image
+                        margin-bottom: 4vw;
                   }
 
                   & img{
@@ -79,19 +80,22 @@
                   padding: 0;
             }
             &-image{
-                  width: 45%;
+                  max-width: 500px;
+                  width: 40vw;
                   position: relative;
                   align-self: stretch;
                   z-index: 0;
                   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
                   @include respond (tab-land) {
-                        width: 45%;
-
+                        width: 40vw;
+                        max-width: 340px;
                   }
                   @include respond (tab-small){
                         width: 90vw;
+                        max-width: unset;
                         height: 80vw;
                         align-self: center;
+                        margin-bottom: 4vw;
                   }
 
                   & img{
@@ -116,18 +120,18 @@
 
                   & svg {
                         position: absolute;
-                        bottom: 78%;
-                        right: 13%;
+                        bottom: 80%;
+                        right: 7%;
                         z-index: -1;
                         height: 13%;
                         
                         @include respond (tab-land) {
-                              bottom: 78%;
-                              right: 17%;
+                              bottom: 80%;
+                              right: -6%;
                         }
                         @include respond (tab-small){
-                              top: -6%;
-                              right: 22%;
+                              top: -5%;
+                              right: 23%;
                         }
                   }
             }
@@ -142,6 +146,18 @@
             
       &__box{
             height: auto;
+
+            & h4,h1 {
+                  @include respond (tab-small){
+                        text-align: center;
+                  }
+            }
+
+            & h4{
+                  @include respond (tab-small){
+                        margin-bottom: 2vw;
+                  }
+            }
       }
 
       &__item{

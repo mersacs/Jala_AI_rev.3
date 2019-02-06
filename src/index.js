@@ -80,7 +80,7 @@ const animate = ( ) => {
 const features = document.querySelectorAll(".features__item");
 
 features.forEach(el => {
-      el.addEventListener("click", () => {
+      el.addEventListener("mouseenter", () => {
             const type = el.parentNode.dataset.type;
             const image = document.querySelectorAll(`.features__container--${type}-image img`);
             const activeImage = document.querySelector(`.features__container--${type}-image .features__image__${type}--show`);

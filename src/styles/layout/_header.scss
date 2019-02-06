@@ -15,6 +15,7 @@
             flex-direction: column;
             justify-content: center;
             background: url(../assets/hero.jpg) no-repeat right top;
+            // background-size: 50%;
             background-color: $color-wh;
 
             @include respond (big-desktop) {
@@ -137,18 +138,20 @@
                   padding: 2.5rem 2.5rem;
             }
 
-            @include customRespond (700) {
-                  width: 75%;
+            @include respond (tab-small) {
+                  width: 80vw;
                   align-self: center;
                   margin-left: 0;
-                  margin-top: -4rem;
                   height: auto;
-                  padding: 0.5rem 2.5rem;
+                  padding: 1.5rem 2.5rem;
+            }
+            @include customRespond(550){
+                  width: 80vw;
+                  max-width: 40rem;
             }
             @include customRespond (500) {
                   width: 75vw;
                   max-width: 300px;
-                  padding: 1.5rem 2.5rem;
                   margin-top: 5vw;
                   background-color: transparent;
                   box-shadow: 0 0px 35px 0 rgba(0, 0, 0, 0.15);
@@ -176,6 +179,9 @@
                         @include respond (mid-desktop) {
                               font-size: 2rem;
                         }
+                        @include respond (tab-small) {
+                              font-size: calc(2rem + 1vw);
+                        }
                         @include customRespond (500) {
                               color: $color-bk3;
                         }
@@ -187,6 +193,10 @@
                         font-size: 1.4rem;
                         @include respond (mid-desktop) {
                               font-size: 1.2rem;
+                        }
+                        @include respond (tab-small) {
+                              font-weight: 300;
+                              font-size: calc(1.2rem + .5vw);
                         }
                         @include customRespond (500) {
                               color: $color-rd2;
@@ -251,7 +261,7 @@
                   width: 40%;
             }
 
-            @include customRespond (700) {
+            @include respond (tab-small) {
                   width: 80%;
                   flex-wrap: wrap;
                   position: unset;
@@ -267,9 +277,12 @@
                         width: 40%;
                         margin: 2rem 0;
                   }
-                  @include customRespond (700) {
+                  @include respond (tab-small) {
                         width: 33%;
                         position: relative;
+                  }
+                  @include customRespond (500) {
+                        width: 50%;
                   }
 
                   & svg{
@@ -284,7 +297,7 @@
                               width: 90%;
                               height: 90%;
                         }
-                        @include customRespond (700) {
+                        @include respond (tab-small) {
                               width: 70%;
                               height: 70%;
                               display: block;
