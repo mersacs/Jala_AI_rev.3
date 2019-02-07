@@ -28,7 +28,7 @@
                   align-items: flex-start;
                   position: absolute;
                   top: 99%;
-                  left: 0;
+                  right: 0;
                   width: 50%;
                   height: auto;
                   background-color: $color-bk;
@@ -109,9 +109,7 @@
                         background-color: $color-grn;
                         padding: .8rem 2rem;
                   }
-                  @include respond(tab-small){
-                        color: $color-bk !important;
-                  }
+                  
             }
             & .btn--red{
                   font-weight: 600;
@@ -121,7 +119,7 @@
                   padding: 1rem 2rem;
                   text-align: center;
                   @include customRespond(438){
-                        padding: 1rem 1rem;
+                        padding: 1rem 1vw;
                   }
             }
             & span svg {

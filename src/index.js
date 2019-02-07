@@ -4,17 +4,38 @@ const reaction = (el) => {
       const nav = document.querySelector( '.navigation' );
       const item = document.querySelectorAll('.navigation__link');
       const allSvg = document.querySelectorAll( ".navigation__burger--icon [class]" );
+      const btn = document.querySelector(".btn--transparent");
+      const btnSvg = document.querySelector(".btn--transparent span svg");
 
       if (el === "remove"){
             nav.classList.remove( "navigation--black" );
             item.forEach((el)=> el.classList.remove( "navigation__link--white" ));
             allSvg.forEach(el => el.style.stroke = "#363c48");
+            // button login
+            btn.removeAttribute("style");
+            btnSvg.removeAttribute("style");
+
       } else if (el === "add"){
             nav.classList.add( "navigation--black" );
             item.forEach((el)=> el.classList.add( "navigation__link--white" ));
             allSvg.forEach(el => el.style.stroke = "#ffffff");
+            btn.style.color = "#ffffff";
+            btnSvg.style.fill = "#ffffff";
       }
 };
+
+const logo = ( ) => {
+      const main = document.querySelector( '.section-try' );
+      const svg = document.querySelector( '.svg_paralax' );
+      const perc = main.offsetTop - ((document.documentElement.clientHeight)*(9/10) );
+      
+      if ( document.documentElement.scrollTop > perc || window.pageYOffset > perc) {
+            svg.style.transform = `translateY(${(perc - window.pageYOffset ) / 5}px)`;
+
+      } else {
+            svg.style.transform = `translateY(0px)`;
+      }
+}
 
 const navbar = ( ) => {    
       if ( document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight ) {
@@ -30,6 +51,7 @@ const navbar = ( ) => {
 window.addEventListener( "scroll", function ( e ) {
       window.requestAnimationFrame( ( ) => {
             navbar( );
+            logo();
       } );
 } );
 

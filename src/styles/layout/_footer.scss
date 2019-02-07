@@ -115,6 +115,13 @@
                         padding: 0 0;
                   }
             }
+
+            & .btn--red {
+                  @include respond(tab-small){
+                        background-color: $color-grn;
+                        color: $color-wh2;
+                  }
+            }
       }
 
       &__list{

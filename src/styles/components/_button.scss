@@ -15,7 +15,10 @@
 
       &--transparent{
             background-color: transparent;
-            color: $color-wh2 !important;
+            color: $color-wh2;
+            @include respond(tab-small){
+                  color: $color-bk;
+            }
       }
 
       &--icon{
@@ -25,7 +28,10 @@
                   padding: 0 1rem;
                   position: relative;
                   top: .3rem;
-                  
+
+                  & svg {
+                        fill: $color-wh2;
+                  }
             }
       }
 }
