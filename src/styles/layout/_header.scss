@@ -24,7 +24,7 @@
             }
 
             &-content{
-                  max-width: 1240px;
+                  max-width: 1265px;
                   position: relative;
                   left: 50%;
                   transform: translateX(-50%);
@@ -95,7 +95,7 @@
       }
 
       &__image{
-            width: 90rem;
+            align-self: flex-end;
             height: 52rem;
             
             @include customRespond (1100) {
@@ -118,7 +118,7 @@
             background-color: $color-bk3;
             align-self: flex-end;
             border-radius: 8px;
-            margin-left: -4rem;
+            // margin-left: -4rem;
             box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.09);
             padding: 3.5rem 4.8rem;
             display: flex;
@@ -127,10 +127,6 @@
 
             @include respond (mid-desktop) {
                   padding: 2.5rem 2.3rem;
-            }
-
-            @include customRespond (1265) {
-                  padding: 2.5rem 2rem;
             }
 
             @include customRespond (1100) {
