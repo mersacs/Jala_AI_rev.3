@@ -26,6 +26,12 @@
                   background-position: 20% 0;
             }
 
+            &-content{
+                  max-width: 1240px;
+                  position: relative;
+                  left: 50%;
+                  transform: translateX(-50%);
+            }
             & h1 {
                   color: $color-bk2;
                   width: 50%;
