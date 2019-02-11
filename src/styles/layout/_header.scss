@@ -18,10 +18,7 @@
             // background-size: 50%;
             background-color: $color-wh;
 
-            @include respond (big-desktop) {
-                  align-items: center;
-                  
-            }
+            
             @include respond (tab-port) {
                   background-position: 20% 0;
             }

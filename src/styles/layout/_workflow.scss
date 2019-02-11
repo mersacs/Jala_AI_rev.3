@@ -68,6 +68,9 @@
                         // @include respond (mid-desktop){
                         //       width: 70%;
                         // }
+                        @include respond (big-desktop) {
+                              border-radius: 5px;
+                        }
                         @include customRespond (1100){
                               width: 80%;
                         }
@@ -99,7 +102,8 @@
                         border-radius: 5px;
                         // @include respond (mid-desktop){
                         //       width: 90%;
-                        // } 
+                        // }
+                        
                         @include respond (tab-small){
                               left: unset;
                               bottom: unset;
@@ -140,6 +144,9 @@
                         // @include respond (mid-desktop){
                         //       width: 90%;
                         // }
+                        @include respond (big-desktop) {
+                              border-radius: 5px;
+                        }
                         @include respond (tab-port){
                               width: 100%;
                         }

@@ -2,8 +2,7 @@
       width: 22rem;
       display: flex;
       flex-direction: column;
-      padding: 2rem;
-      box-shadow: 0 0 18px 0 rgba(0,0,0,.2);
+      padding: 1vw;
       border-radius: 5px;
       position: relative;
       overflow: hidden;
@@ -22,7 +21,7 @@
             width: 100%;
             top: -15%;
             left: 0;
-            background-color: $color-grey3;
+            background-color: rgba($color-grey3, .7);
             z-index: -1;
             transform: skewy(15deg);
             transition: .7s;
@@ -39,7 +38,7 @@
             width: 100%;
             top: 0;
             left: 0;
-            background-color: $color-wh2;
+            background-color: rgba($color-wh2 , .5);
             z-index: -2;
       }
       &__image{
@@ -56,5 +55,9 @@
             padding-top: 100%;
             text-align: center;
             width: 100% !important;
+            @include respond(tab-small){
+                  font-size: calc(1vw + 7px);
+                  padding-top: 85%;
+            }
       }
 }

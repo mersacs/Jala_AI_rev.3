@@ -24,6 +24,9 @@
 
 .u-margin-bot-xbg {
       margin-bottom: 18vw !important;
+      @include respond (big-desktop) {
+            margin-bottom: 10vw !important;
+      }
 }
 
 .u-margin-bot-bg {
@@ -36,6 +39,9 @@
 
 .u-margin-bot-md{
       margin-bottom: 2.77vw !important;
+      @include respond (big-desktop) {
+            margin-bottom: 1vw !important;
+      }
 }
 
 .u-margin-bot-sm {

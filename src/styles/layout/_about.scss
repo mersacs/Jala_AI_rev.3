@@ -1,14 +1,20 @@
 .about{
       width: 88%;
       margin: 0 auto;
-      display: none;
+      // display: none;
+      
+      @include respond (big-desktop) {
+            width: 135rem;
+            margin: 0 auto;
+      }
+      
       &__container{
             display: flex;
             justify-content: space-around;
             align-items: stretch;
             flex-wrap: wrap;
             & div {
-                  margin: 1rem 1rem;
+                  margin: 1vw 1vw;
             }
       }
       @include customRespond(438){

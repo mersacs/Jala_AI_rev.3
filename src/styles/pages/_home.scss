@@ -1,12 +1,21 @@
 
 /* --------------------------------SECTION WORKFLOW----------------------------------- */ 
 
-
+.section-about{
+      position: relative;
+      & svg {
+            position: absolute;
+            z-index: -1;
+            width: 91%;
+            top: -32vw;
+            left: -3%;
+      }
+}
 /* --------------------------------SECTION TRY----------------------------------- */ 
 .section-try{
       position: relative;
       padding-bottom: 10vw;
-      
+      display: none;
       & svg {
             position: absolute;
             z-index: -1;
