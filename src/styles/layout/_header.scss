@@ -82,7 +82,7 @@
             height: 53rem;
             display: flex;
             justify-content: center;
-            width: 95%;
+            width: 88%;
             margin: -16rem auto 0;
             
             @include customRespond (1265) {
@@ -143,6 +143,7 @@
                   margin-left: 0;
                   height: auto;
                   padding: 1.5rem 2.5rem;
+                  margin-top: 2vw;
             }
             @include customRespond(550){
                   width: 80vw;
@@ -163,7 +164,7 @@
                   justify-content: space-between;
                   align-items: center;
                   @include customRespond (660) {
-                        width: 97%;
+                        width: 100%;
                         margin: 0 auto;
                   }
             }
@@ -205,22 +206,38 @@
 
             &__playstore{
                   width: 17rem;
+                  max-width: 48%;
                   height: 6.4rem;
-
+                  margin-right: -3%;
+                  @include respond (tab-small) {
+                        margin-right: -1%;
+                  }
                   @include customRespond (500) {
                         width: 27vw;
                         max-width: 100px;
                         align-self: center;
                         height: fit-content;
-                        
-                        & svg .kotak {
-                              fill: transparent;
-                        }
-                        & svg .border {
-                              fill: $color-grey5;
-                        }
-                        & svg .text-1, & svg .text-2 {
-                              fill: $color-bk4;
+                  }
+
+                  & svg {
+                        display: block;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        @include customRespond (500) {
+                              display: block;
+                              position: unset;
+                              top: unset;
+                              transform: unset;
+                              & .kotak {
+                                    fill: transparent;
+                              }
+                              & .border {
+                                    fill: $color-grey5;
+                              }
+                              & .text-1, & .text-2 {
+                                    fill: $color-bk4;
+                              }
                         }
                   }
             }
@@ -230,9 +247,8 @@
                   height: auto;
                   margin-top: 2rem;
                   @include customRespond (700) {
-                        margin-top: 0;
+                        margin-top: 2.2vw;
                   }
-                  
             }
       }
 

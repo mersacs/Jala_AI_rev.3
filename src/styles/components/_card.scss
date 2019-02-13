@@ -8,8 +8,14 @@
       overflow: hidden;
       transform: rotatey(0deg);
       backface-visibility: hidden;
-      transition: 2s;
+      transition: 1s;
       position: relative;
+
+      &:hover{
+            transform: translateY(-.7vw);
+            box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.09);
+      }
+
       @include customRespond(438){
             width: 40vw;
       }
@@ -21,7 +27,7 @@
             width: 100%;
             top: -15%;
             left: 0;
-            background-color: rgba($color-grey3, .7);
+            background-color: rgba($color-grey2, .2);
             z-index: -1;
             transform: skewy(15deg);
             transition: .7s;

@@ -5,6 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const buildPath = path.resolve(__dirname, 'dist');
 
@@ -74,15 +75,15 @@ module.exports = {
                     }
                 ]
             },
-            {
-                test: /\.svg/,
-                use: {
-                    loader: 'svg-url-loader',
-                    options: {
-                        name: 'assets/[name].[hash:20].[ext]'
-                    }
-                }
-            }
+            // {
+            //     test: /\.svg/,
+            //     use: {
+            //         loader: 'svg-url-loader',
+            //         options: {
+            //             name: 'assets/[name].[hash:20].[ext]'
+            //         }
+            //     }
+            // }
         ]
     },
     plugins: [
@@ -135,6 +136,16 @@ module.exports = {
                 }
             },
             canPrint: true
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: 'src/assets/*.svg',
+                to: 'assets/[name].[ext]',
+            },
+            {
+                from: 'favicon.ico',
+                to: '[name].[ext]',
+            }
+        ])
     ]
 };

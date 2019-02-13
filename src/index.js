@@ -28,9 +28,13 @@ const logo = ( ) => {
       const main = document.querySelector( '.section-about' );
       const svg = document.querySelector( '.svg_paralax' );
       const perc = main.offsetTop - ((document.documentElement.clientHeight)*(9/10) );
-      
+
       if ( document.documentElement.scrollTop > perc || window.pageYOffset > perc) {
-            svg.style.transform = `translateY(${( window.pageYOffset - perc) / 4}px)`;
+            if ((main.offsetTop + main.offsetHeight) <= document.documentElement.scrollTop) {
+                        return;
+            } else {
+                  svg.style.transform = `translateY(${( window.pageYOffset - perc) / 25}vh)`;
+            }
       } else {
             svg.style.transform = `translateY(0px)`;
       }
