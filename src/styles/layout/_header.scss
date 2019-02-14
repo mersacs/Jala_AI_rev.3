@@ -103,7 +103,9 @@
             align-self: flex-end;
             max-height: calc(35vw + 15px);
             height: 52rem;
-            
+            @include customRespond (1440) {
+                  max-height: calc(35vw);
+            }
             @include customRespond (1100) {
                   align-self: center;
                   max-height: unset;
