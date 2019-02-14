@@ -7,9 +7,9 @@
       transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s all;
       display: flex;
       align-items: center;
-      padding: 0 6%;
-      @include respond (big-desktop) {
-            padding: 0 calc((100vw - 127rem)/2);
+      padding: 0 calc((100vw - 127rem)/2);
+      @include customRespond(1440){
+            padding: 0 6%;
       }
       @include respond(tab-small){
             z-index: 100;

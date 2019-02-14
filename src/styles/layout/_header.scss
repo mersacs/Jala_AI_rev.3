@@ -81,12 +81,17 @@
       &__container{
             height: 53rem;
             display: flex;
-            justify-content: center;
-            width: 88%;
+            justify-content: space-between;
+            max-width: 1265px;
             margin: -16rem auto 0;
-            
+
+            @include customRespond (1440) {
+                  justify-content: space-between;
+                  width: 88%;
+            }
+
             @include customRespond (1265) {
-                  width: 98%;
+                  width: 88%;
             }
             @include customRespond (1100) {
                   flex-direction: column;
@@ -96,10 +101,12 @@
 
       &__image{
             align-self: flex-end;
+            max-height: calc(35vw + 15px);
             height: 52rem;
             
             @include customRespond (1100) {
                   align-self: center;
+                  max-height: unset;
             }
             @include customRespond (700) {
                   width: 90%;
@@ -114,7 +121,8 @@
 
       &__form{
             height: 43rem;
-            width: 45rem;
+            width: 38rem;
+            max-width: 33%;
             background-color: $color-bk3;
             align-self: flex-end;
             border-radius: 8px;
@@ -131,6 +139,7 @@
 
             @include customRespond (1100) {
                   align-self: flex-end;
+                  max-width: unset;
             }
 
             @include respond (tab-port) {
