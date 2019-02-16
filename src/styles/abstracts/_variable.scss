@@ -1,0 +1,110 @@
+$color-bk: #1a1314;
+$color-bk2: #363c48;
+$color-bk3: #0f121b;
+$color-bk4: #5c5758;
+$color-bk5: #171717;
+
+$color-grey: #969696;
+$color-grey2: #e1e1e1;
+$color-grey3: #fafafa;
+$color-grey4: #cbcbcb;
+$color-grey5: #d7d7d7;
+
+$color-wh: #f7f7f7;
+$color-wh2: #ffffff;
+
+$color-rd: #ec211f;
+$color-rd2: #fc574d;
+$color-rd3: #fc3b30;
+
+$color-grn: #129f9f;
+//cobak
+
+$color-primary-0: #F05F57;	// Main Primary color */
+$color-primary-1: #FF9B96;
+$color-primary-2: #FF7770;
+$color-primary-3: #BD413B;
+$color-primary-4: #7C201B;
+$color-primary-5: #fffcfc;
+
+$color-secondary-1-0: #F09F57;	// Main Secondary color (1) */
+$color-secondary-1-1: #FFC896;
+$color-secondary-1-2: #FFB370;
+$color-secondary-1-3: #BD783B;
+$color-secondary-1-4: #7C491B;
+
+$color-secondary-2-0: #368A92;	// Main Secondary color (2) */
+$color-secondary-2-1: #86DAE1;
+$color-secondary-2-2: #53B3BB;
+$color-secondary-2-3: #256C73;
+$color-secondary-2-4: #11464B;
+
+$color-complement-0: #43BA52;	// Main Complement color */
+$color-complement-1: #8CEE98;
+$color-complement-2: #5FD86E;
+$color-complement-3: #2E933A;
+$color-complement-4: #15601E;
+
+
+
+@mixin respond ($breakpoint) {
+      @if $breakpoint==phone {
+            @media only screen and (max-width: 37.5em) {
+                  @content
+            }
+
+            ; //sama dengan media query 600px untuk phone
+      }
+
+      @if $breakpoint==tab-small {
+            @media only screen and (max-width: 48em) {
+                  @content
+            }
+
+            ; // sama dengan media query 768px untuk tablet ukuran kecil
+      }
+
+      @if $breakpoint==tab-port {
+            @media only screen and (max-width: 56.25em) {
+                  @content
+            }
+
+            ; // sama dengan media query 900px untuk tablet berdiri
+      }
+
+      @if $breakpoint==tab-land {
+            @media only screen and (max-width: 75em) {
+                  @content
+            }
+
+            ; // sama dengan media query 1200px untuk tablet tidur
+      }
+
+      @if $breakpoint==mid-desktop {
+            @media only screen and (max-width: 85em) {
+                  @content
+            }
+
+            ; // sama dengan media query 1360px untuk mid desktop
+      }
+
+      @if $breakpoint==big-desktop {
+            @media only screen and (min-width: 105em) {
+                  @content
+            }
+
+            ; // sama dengan media query 1680px untuk desktop besar
+      }
+}
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+      @return #{$pixels/$context}em;
+}
+
+@mixin customRespond ($x) {
+      @media only screen and (max-width: em($x)) {
+            @content
+      }
+}

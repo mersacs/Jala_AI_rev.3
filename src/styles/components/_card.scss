@@ -1,0 +1,69 @@
+.card {
+      width: 22rem;
+      display: flex;
+      flex-direction: column;
+      padding: 1vw;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      transform: rotatey(0deg);
+      backface-visibility: hidden;
+      transition: 1s;
+      position: relative;
+
+      &:hover{
+            transform: translateY(-.7vw);
+            box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.09);
+      }
+
+      @include customRespond(438){
+            width: 40vw;
+      }
+
+      &:before{
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 100%;
+            top: -15%;
+            left: 0;
+            background-color: rgba($color-grey2, .2);
+            z-index: -1;
+            transform: skewy(15deg);
+            transition: .7s;
+      }
+      
+      &:hover:before{
+            height: 140%;
+      }
+
+      &:after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color-wh2 , .5);
+            z-index: -2;
+      }
+      &__image{
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            display: block;
+            position: absolute;
+            // flex-basis: 40%;
+      }
+
+      &__desc{
+            padding-top: 100%;
+            text-align: center;
+            width: 100% !important;
+            @include respond(tab-small){
+                  font-size: calc(1vw + 7px);
+                  padding-top: 85%;
+            }
+      }
+}
