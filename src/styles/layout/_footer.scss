@@ -1,0 +1,211 @@
+.footer{
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(250,250,250,1) 20%, rgba(252,59,48,1) 20%, rgba(252,59,48,1) 100%);
+      padding-top: 10rem;
+      &__card{
+            width: 95%;
+            padding: 5% 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            background-color: $color-wh2;
+            box-shadow: 0 25px 20px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 10px 10px;
+
+            @include customRespond(1100){
+                  display: grid;
+                  grid-template-areas:    'gambar try'
+                                          'gambar form';
+            }
+            @include respond(tab-small){
+                  grid-template-areas:    'gambar gambar'
+                                          'try try'
+                                          'form form';
+                  grid-template-rows: auto auto auto;
+                  grid-template-columns: 50% 50%;
+                  grid-row-gap: 5vw;
+                  padding: 0% 5% 5%;
+                  width: 90%;
+            }
+      }
+
+      &__container{
+            width: 33%;
+            @include customRespond(1100){
+                  width: 90%;
+            }
+            @include respond(tab-small){
+                  width: 95%;
+            }
+
+            &:first-child{
+                  width: fit-content;
+
+                  @include customRespond(1100){
+                        padding-left: 0;
+                        grid-area: gambar;
+                  }
+                  @include respond(tab-small){
+                        margin: 0 auto;
+                  }
+                  @include customRespond(660){
+                        margin-top: 5vw;
+                        margin-bottom: 3vw;
+                  }
+                  & svg {
+                        @include respond(tab-small){
+                              width: 60vw;
+                              max-width: 30rem;
+                              height: 60vw;
+                              max-height: 57rem;
+                        }
+                  }
+            }
+
+            &:nth-child(2){
+                  @include customRespond(1100){
+                        grid-area: try;
+                        margin-bottom: 3rem;
+                  }
+                  @include respond(tab-small){
+                        width: 100%;
+                        margin-bottom: 0;
+                  }
+                  @include customRespond(450){
+                        margin-bottom: 4vw;
+                  }
+            }
+            /// child dari ke-2
+            & div {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  @include respond(tab-small){
+                        justify-content: flex-start;
+                  }
+
+                  & div {
+                        @include respond(tab-small){
+                              flex-basis: auto;
+                              margin-right: 2vw;
+                        }
+                        
+                        & h3 {
+                              width: 100%;
+                        }
+                  }
+            }
+
+
+            &:last-child{
+                  @include customRespond(1100){
+                        grid-area: form;
+                  }
+                  @include respond(tab-small){
+                        width: 80vw;
+                        max-width: 100rem;
+                        margin: 0 auto;
+                  }
+                  @include customRespond(550){
+                        width: 80vw;
+                        max-width: 30rem;
+                  }
+                  @include customRespond(450){
+                        padding: 0 0;
+                  }
+            }
+
+            & .btn--red {
+                  @include respond(tab-small){
+                        background-color: $color-grn;
+                        color: $color-wh2;
+                  }
+            }
+      }
+
+      &__list{
+            list-style: none;
+      }
+      &__item{
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 1.69;
+            display: flex;
+            align-items: center;
+            & span {
+                  color: $color-grn;
+                  font-size: 2.5rem;
+                  margin-right: 1.5rem;
+            }
+      }
+      & p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 1.5;
+            color: $color-bk4;
+            margin: 1rem 0 2rem 0;
+      }
+
+      & h1 {
+            color: $color-bk2;
+            & span {
+                  position: relative;
+
+                  &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        bottom: 4px;
+                        right: 0;
+                        width: 100%;
+                        background-color: $color-rd;
+                        height: 13px;
+                        opacity: .5;
+                  }
+            }
+      }
+
+      & h3 {
+            color: $color-bk5;
+            font-size: 1.8rem;
+            font-weight: 500; 
+            padding-left: 2%;
+            
+      }
+
+      & hr {
+            border: 1px $color-grey4 solid;
+            margin: 3.6rem 0;
+      }
+
+      &__copyright{
+            color: $color-wh2;
+            display: flex;
+            justify-content: space-between;
+            padding: 3% 0;
+            width: 95%;
+            margin: 0 auto;
+            @include customRespond(700){
+                  flex-direction: column;
+            }
+
+            & h4 {
+                  font-weight: 600;
+                  font-size: 1.4rem;
+            }
+
+            & h5 {
+                  font-weight: 300;
+                  font-size: 1.4rem;
+            }
+
+            & div:last-child{
+                  text-align: right;
+                  @include customRespond(700){
+                        margin-top: 2vw;
+                        text-align: center;
+                  }
+            }
+      }
+}
