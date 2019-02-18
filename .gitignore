@@ -1,16 +1,17 @@
 # GITHUB
 
-.idea
-/node_modules
-dist
+# .idea
+# /node_modules
+# dist
 
 
 
 # GITLAB
-# /*
-# /*/
-# !/dist/
-# !index.php
+
+/*
+/*/
+!/dist/
+!index.php
 
 
 # UNTUK REMOVE FILE 
