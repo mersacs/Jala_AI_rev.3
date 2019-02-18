@@ -1,0 +1,41 @@
+.about{
+      width: 88%;
+      margin: 0 auto;
+      // display: none;
+      
+      @include respond (big-desktop) {
+            width: 135rem;
+            margin: 0 auto;
+      }
+      
+      &__container{
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-wrap: wrap;
+            & div {
+                  margin: 1vw 1vw;
+            }
+      }
+      @include customRespond(438){
+            width: 93%;
+      }
+
+      & .paragraph {
+            width: 70%;
+            @include customRespond(1200){
+                  width: 80vw;
+                  max-width: 730px;
+            }
+            @include customRespond(438){
+                  padding-left: 1vw;
+            }
+      }
+
+      & .heading__1{
+            margin-bottom: 1rem;
+            @include customRespond(438){
+                  padding-left: 1vw;
+            }
+      }
+}
