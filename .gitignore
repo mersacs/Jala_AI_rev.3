@@ -1,0 +1,21 @@
+# GITHUB
+
+.idea
+/node_modules
+dist
+
+# GITLAB
+
+# /*
+# /*/
+# !/dist/
+# !index.php
+
+
+# UNTUK REMOVE FILE 
+# git rm -r --cached node_modules
+# git commit -m "Remove the now ignored directory node_modules"
+# git push origin master
+
+# UNTUK change user // terakhir
+# git push -u gitlab master // LAKUKAN PERUBAHAN DI GIT IGNORE DULU
