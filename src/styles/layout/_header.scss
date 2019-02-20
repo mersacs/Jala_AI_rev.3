@@ -10,13 +10,12 @@
       &__jumbotron{
             padding: 0 6%;
             // width: auto;
-            height: 50rem;
+            height: 499px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: url(../assets/header.jpg) no-repeat right top;
+            background: url(../assets/header.jpg) no-repeat right top, linear-gradient(to bottom, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 80%, rgba(255,255,255,1) 100%);
             // background-size: 50%;
-            background-color: $color-wh;
 
             
             @include respond (tab-port) {
